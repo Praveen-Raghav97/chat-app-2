@@ -50,7 +50,7 @@ REDIS_URL=redis://localhost:6379
 ```
 
 ## 📷 Screenshots
-![Chat UI](https://your-image-url.com/chat-ui.png)
+![Chat UI](https://res.cloudinary.com/derlbfbjz/image/upload/v1738161481/Screenshot_2025-01-29_200528_ue2duh.png)
 
 ## 🤝 Contributing
 Contributions are welcome! Feel free to fork the repository and submit a pull request.
