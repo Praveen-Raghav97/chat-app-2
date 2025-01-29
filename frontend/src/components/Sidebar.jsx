@@ -42,13 +42,13 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="overflow-y-auto  w-full md:py-3">
+      <div className="overflow-y-auto  w-full py-3">
         {filteredUsers.map((user) => (
           <button
             key={user._id}
             onClick={() => setSelectedUser(user)}
             className={`
-              w-full flex  flex-row items-center gap-3
+               w-full flex p-3 items-center gap-3
               hover:bg-base-300 transition-colors
               ${selectedUser?._id === user._id ? "bg-base-300 ring-1 ring-base-300" : ""}
             `}
