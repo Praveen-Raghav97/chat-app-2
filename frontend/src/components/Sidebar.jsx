@@ -42,7 +42,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className=" md:overflow-y-auto overflow-x-auto w-full py-1 md:py-3">
+      <div className="overflow-y-auto overflow-x-auto w-full py-1 md:py-3">
         {filteredUsers.map((user) => (
           <button
             key={user._id}
