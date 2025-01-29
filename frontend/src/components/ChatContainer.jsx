@@ -46,7 +46,7 @@ const ChatContainer = () => {
     <div className="flex-1 flex flex-col overflow-auto rounded-2xl shadow-xl md:h-auto h-screen">
       <ChatHeader />
 
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+      <div className="flex-1 h-full overflow-y-auto p-4 space-y-4">
         {messages.map((message) => (
           <div
             key={message._id}
