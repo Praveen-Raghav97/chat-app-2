@@ -1,42 +1,70 @@
 # ✨ Full Stack Realtime Chat App ✨
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
 
-[Video Tutorial on Youtube](https://youtu.be/ntKkVrQqBYY)
 
-Highlights:
 
-- 🌟 Tech stack: MERN + Socket.io + TailwindCSS + Daisy UI
-- 🎃 Authentication && Authorization with JWT
-- 👾 Real-time messaging with Socket.io
-- 🚀 Online user status
-- 👌 Global state management with Zustand
-- 🐞 Error handling both on the server and on the client
-- ⭐ At the end Deployment like a pro for FREE!
-- ⏳ And much more!
+# Real-Time Chat Application
 
-### Setup .env file
+![Chat App Banner](https://your-image-url.com/banner.png)
 
-```js
-MONGODB_URI=...
-PORT=5001
-JWT_SECRET=...
+## 🚀 Introduction
+Welcome to the **Real-Time Chat Application**! This app enables users to send messages, share media, and communicate instantly with others. It supports real-time updates, authentication, and voice note functionality.
 
-CLOUDINARY_CLOUD_NAME=...
-CLOUDINARY_API_KEY=...
-CLOUDINARY_API_SECRET=...
+## ✨ Features
+- 💬 **Instant Messaging** - Send and receive messages in real-time.
+- 🎙️ **Voice Notes** - Record and send voice messages.
+- 🔒 **Authentication** - Secure login and signup using NextAuth.
+- 📂 **Media Sharing** - Share images, videos, and files.
+- 📌 **Group Chats** - Create and manage group conversations.
+- 🌍 **Online Status** - See who's online.
 
-NODE_ENV=development
+## 🛠️ Tech Stack
+- **Frontend**: Next.js, TypeScript, Tailwind CSS, ShadCN UI
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB, Redis
+- **Real-time Communication**: WebSockets, Socket.io
+- **Authentication**: NextAuth.js
+- **Deployment**: Vercel, Docker, Nginx
+
+## 📦 Installation
+```bash
+git clone https://github.com/Praveen-Raghav97/chat-app-2.git
+cd chat-app
+npm install
 ```
 
-### Build the app
+## 🚀 Running the App
+### Development Mode
+```bash
+npm run dev
+```
 
-```shell
+### Production Mode
+```bash
 npm run build
-```
-
-### Start the app
-
-```shell
 npm start
 ```
+
+## 🔧 Environment Variables
+Create a `.env.local` file and configure the following:
+```env
+NEXTAUTH_URL=http://localhost:3000
+DATABASE_URL=mongodb+srv://your-db-url
+REDIS_URL=redis://localhost:6379
+```
+
+## 📷 Screenshots
+![Chat UI](https://your-image-url.com/chat-ui.png)
+
+## 🤝 Contributing
+Contributions are welcome! Feel free to fork the repository and submit a pull request.
+
+## 📄 License
+This project is licensed under the MIT License.
+
+## 📞 Contact
+- **Author**: Praveen Raghav
+- **Linkedin**:https://www.linkedin.com/in/praveen-raghav/
+- **Email**: rishavthakur9027@gmail.com
+- **GitHub**: [github.com/praveenraghav](https://github.com/praveen-raghav97)
+
