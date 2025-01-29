@@ -1,4 +1,4 @@
-                  # ✨ Full Stack Realtime Chat App ✨
+ # ✨ Full Stack Realtime Chat App ✨
 
 
 ![Chat App Banner](https://your-image-url.com/banner.png)
