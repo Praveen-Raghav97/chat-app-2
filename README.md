@@ -1,7 +1,7 @@
  # ✨ Full Stack Realtime Chat App ✨
 
 
-![Chat App Banner](https://res.cloudinary.com/derlbfbjz/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1738161481/Screenshot_2025-01-29_200528_ue2duh.png)
+![Chat App Banner](https://res.cloudinary.com/derlbfbjz/image/upload/v1738161481/Screenshot_2025-01-29_200528_ue2duh.png)
 
 ## 🚀 Introduction
 Welcome to the **Real-Time Chat Application**! This app enables users to send messages, share media, and communicate instantly with others. It supports real-time updates, authentication, and voice note functionality.
