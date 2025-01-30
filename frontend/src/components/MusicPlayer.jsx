@@ -52,7 +52,7 @@ export default function MusicPlayer() {
   };
 
   return (
-    <div className="flex w-[220px] items-center">
+    <div className="flex md:w-[220px] w-[100px] items-center">
       <audio  controls>
         <source src={music} type="audio/mp3" />
       </audio>
