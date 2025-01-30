@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import { useChatStore } from "../store/useChatStore";
 import { useAuthStore } from "../store/useAuthStore";
 import SidebarSkeleton from "./skeletons/SidebarSkeleton";
-import { Users } from "lucide-react";
+import { Search, Users } from "lucide-react";
+import Searchbar from "./Search";
+
 
 const Sidebar = () => {
   const { getUsers, users, selectedUser, setSelectedUser, isUsersLoading } = useChatStore();
@@ -20,11 +22,14 @@ const Sidebar = () => {
   if (isUsersLoading) return <SidebarSkeleton />;
 
   return (
-    <div className="md:h-full h-auto w-full lg:w-72 border-r border-base-300 flex flex-col transition-all duration-200 rounded-xl shadow-xl">
-      <div className="border-b border-base-300 w-full p-5">
-        <div className="flex items-center gap-2">
+    <div className="md:h-full  h-auto w-full lg:w-72 border-r border-base-300 flex flex-col transition-all duration-200 rounded-xl shadow-xl">
+      <div className="border-b flex  gap-3 items-start md:flex-col-reverse  justify-between border-base-300 w-full p-3 md:p-5">
+        <div className="flex items-center  gap-2">
           <Users className="size-6" />
           <span className="font-medium hidden lg:block">Contacts</span>
+        </div>
+        <div className=" flex items-center gap-2 ">
+          <Searchbar/>
         </div>
         <div className="mt-3 hidden lg:flex items-center gap-2">
           <label className="cursor-pointer flex items-center gap-2">
@@ -41,22 +46,22 @@ const Sidebar = () => {
       </div>
 
       {/* User list with horizontal scrolling on mobile */}
-      <div className="md:overflow-y-auto overflow-x-auto w-full py-3 flex md:flex-col flex-row gap-3 px-3 md:px-0">
+      <div className="md:overflow-y-scroll  h-full scroll- overflow-x-scrool scroll-smooth w-full py-3 flex md:flex-col flex-row gap-3 px-3 md:px-0">
         {filteredUsers.map((user) => (
           <button
             key={user._id}
             onClick={() => setSelectedUser(user)}
             className={`
-              flex flex-col md:flex-row items-center gap-3 p-3
-              hover:bg-base-300 transition-colors hover:rounded-lg
-              ${selectedUser?._id === user._id ? "bg-base-300 ring-1 ring-base-300" : ""}
+              flex flex-col md:flex-row items-center gap-3 md:p-3
+              hover:bg-base-300 transition-colors hover:rounded-full p-1
+              ${selectedUser?._id === user._id ? "bg-base-500 ring-1 ring-base-300" : ""}
             `}
           >
             <div className="relative">
               <img
                 src={user.profilePic || "/avatar.png"}
                 alt={user.name}
-                className="size-12 object-cover rounded-full"
+                className="size-10 object-cover rounded-full"
               />
               {onlineUsers.includes(user._id) && (
                 <span
