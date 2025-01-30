@@ -18,7 +18,7 @@ const Navbar = () => {
               <img src={logo} alt="" className="w-10 h-8" />
                
               </div>
-              <h1 className="text-lg font-bold">Frenemy</h1>
+              <h1 className="text-lg font-bold">Frenmy</h1>
             </Link>
           </div>
 

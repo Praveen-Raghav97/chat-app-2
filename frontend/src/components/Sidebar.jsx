@@ -4,6 +4,7 @@ import { useAuthStore } from "../store/useAuthStore";
 import SidebarSkeleton from "./skeletons/SidebarSkeleton";
 import { Search, Users } from "lucide-react";
 import Searchbar from "./Search";
+import MusicPlayer from "./MusicPlayer";
 
 
 const Sidebar = () => {
@@ -43,6 +44,10 @@ const Sidebar = () => {
           </label>
           <span className="text-xs text-zinc-500">({onlineUsers.length - 1} online)</span>
         </div>
+        <div className="flex items-center">
+        <MusicPlayer/>
+        </div>
+       
       </div>
 
       {/* User list with horizontal scrolling on mobile */}

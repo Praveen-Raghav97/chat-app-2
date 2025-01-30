@@ -20,6 +20,18 @@ const userSocketMap = {}; // {userId: socketId}
 
 io.on("connection", (socket) => {
   console.log("A user connected", socket.id);
+  
+  socket.on("play-music", (data) => {
+    socket.broadcast.emit("play-music", data); // Send event to the other user
+  });
+
+  socket.on("pause-music", () => {
+    socket.broadcast.emit("pause-music");
+  });
+
+  socket.on("seek-music", (time) => {
+    socket.broadcast.emit("seek-music", time);
+  });
 
   const userId = socket.handshake.query.userId;
   if (userId) userSocketMap[userId] = socket.id;
