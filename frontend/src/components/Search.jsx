@@ -39,7 +39,7 @@ const Searchbar = () => {
   }, [query, handleSearch]);
 
   return (
-    <div className="w-full max-w-md mx-auto p-2 bg-white shadow-md rounded-xl">
+    <div className="w-full max-w-md mx-auto p-2 bg-base-100 shadow-md rounded-xl">
       {/* Search Input Field */}
       <div className="relative">
         <input
@@ -54,7 +54,7 @@ const Searchbar = () => {
 
       {/* Show search results only when user starts typing */}
       {query && (
-        <ul className="mt-4 max-h-60 overflow-auto bg-white shadow-md rounded-md">
+        <ul className="mt-4 max-h-60 overflow-auto bg-base-200 shadow-md rounded-md">
           {filteredUsers.length > 0 ? (
             filteredUsers.map((user) => (
               <button
